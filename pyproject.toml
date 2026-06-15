@@ -1,0 +1,41 @@
+[project]
+name = "pepkio-rcf-rpm-rotor-converter"
+version = "0.1.0"
+description = "Python client for Pepkio rcf-rpm-rotor-converter tool"
+readme = "README_PYPI.md"
+requires-python = ">=3.11"
+dependencies = [
+    "click>=8.4.1",
+    "httpx>=0.28.1",
+    "pydantic>=2.13.4",
+]
+
+[project.scripts]
+pepkio-rcf-rpm-rotor-converter = "pepkio_rcf_rpm_rotor_converter.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pepkio_rcf_rpm_rotor_converter"]
+
+[dependency-groups]
+dev = [
+    "hatchling>=1.30.1",
+    "pytest>=9.1.0",
+    "pytest-asyncio>=1.4.0",
+    "python-dotenv>=1.2.2",
+    "ruff>=0.15.17",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
