@@ -2,7 +2,7 @@
 
 Containerized CLI for RPM↔×g conversion, rotor protocol transfer, and batch spin-step processing via the Pepkio Tools API.
 
-**Image status:** `pepkio/rcf-rpm-rotor-converter` is **not yet published on Docker Hub**. The commands below describe the intended image name and tag (`0.1.0` from the GitHub `pyproject.toml`) once the image is built and pushed.
+**Image status:** Published on Docker Hub as `pepkio/rcf-rpm-rotor-converter:0.1.0` (https://hub.docker.com/r/pepkio/rcf-rpm-rotor-converter).
 
 # What It Does
 
