@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT
 """Command-line interface for pepkio-rcf-rpm-rotor-converter."""
 
 from __future__ import annotations

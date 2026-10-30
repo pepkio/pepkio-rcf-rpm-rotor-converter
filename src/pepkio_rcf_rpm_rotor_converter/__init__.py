@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT
 """Python client for Pepkio rcf-rpm-rotor-converter."""
 
 from .client import PepkioClient
